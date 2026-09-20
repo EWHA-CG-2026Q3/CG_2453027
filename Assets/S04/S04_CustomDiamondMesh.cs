@@ -21,8 +21,8 @@ public class S04_CustomDiamondMesh : MonoBehaviour
         int[] triangles = new int[]
         {
             // 위쪽 4면 (정점 4 사용)
-            0, 4, 3,
-            0, 1, 4,
+            0, 3, 4,
+            0, 4, 1,
             1, 2, 4,
             2, 3, 4,
 
