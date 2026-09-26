@@ -407,7 +407,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 336537685}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e98e4cf1323f49c398c009a0d17687c, type: 3}
+  m_Script: {fileID: 11500000, guid: e9f6f9ddc0ead4737baae9a28ea724c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::S05_MyMeshRenderer
   canvasWidth: 256
