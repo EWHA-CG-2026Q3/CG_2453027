@@ -10,6 +10,7 @@ public class S09_ShearX : MonoBehaviour
     [SerializeField] float k = 1.6f;   // 2453027 --> k = (7+1)/5 = 1.6
 
     DiamondMesh diamondMesh;
+    bool logged = false;
 
     void OnEnable()
     {
@@ -26,6 +27,17 @@ public class S09_ShearX : MonoBehaviour
         for (int i = 0; i < baseVertices.Length; i++)
             verts[i] = FromHomogeneous(MultiplyMatrixVectorRaw(S, ToHomogeneous(baseVertices[i])));
         diamondMesh.SetVertices(verts);
+
+        if (!logged)
+        {
+            Vector3 top = new Vector3(0.5f, 1f, 0.5f);
+
+            Vector3 transformedTop = FromHomogeneous(MultiplyMatrixVectorRaw(S, ToHomogeneous(top)));
+
+            Debug.Log("Top Vertex: " + transformedTop);
+
+            logged = true;
+        }
     }
 
     // 참고: z축 회전 행렬 (e₃는 그대로, e₁과 e₂가 돎)
