@@ -55,7 +55,7 @@ public class S11_VirtualCamera_Finish : MonoBehaviour
         if (canvasImage != null)
         {
             canvasImage.texture = canvas;                                    // RawImage가 이 텍스처를 보여 주게 함
-            // canvasImage.rectTransform.sizeDelta = new Vector2(width, height); // RawImage 칸의 크기를 캔버스 픽셀 크기와 같게 맞춤 (늘어나 보이지 않게)
+            canvasImage.rectTransform.sizeDelta = new Vector2(width, height); // RawImage 칸의 크기를 캔버스 픽셀 크기와 같게 맞춤 (늘어나 보이지 않게)
         }
     }
 
